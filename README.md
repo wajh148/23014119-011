@@ -1,54 +1,7 @@
 # web-series
 .....
-CSS STYLE
-body {
-    background-color: rgb(5, 85, 85);
-}
 
-h1{
-     color: aliceblue;
-    font-style: italic;
-    align-items:left;
-    top: 0;
-    left: 0;
-    display: flex;
-    font size :4em;
-}
-
-nav a {
-   margin: 15px;
-    color: aliceblue;  
-  align-items:center ;     
-
-}
-header {
-    background-color: rgb(4, 37, 48);
-    border-radius: 20px;
-
-}
-nav a:hover {
-    background-color: rgb(4, 94, 94);
-}
-
- p{
-    color: aliceblue;
-    font-style: italic;
-    margin left : 20px;
-    text-align: left;
-    width: 50%;
-
-}
-h2 {
-font-size: 2em;
-letter-spacing: 1px;
-color: aliceblue;
-}
-a{
-    color: aliceblue;
-}
-a:hover{
-    background-color: aquamarine;
-}
+    
 
 
 HTML 
@@ -110,3 +63,55 @@ GAME LOVERS</h2>
 </div>
 </body>
 </html>
+
+CSS STYLE
+body {
+    background-color: rgb(5, 85, 85);
+}
+
+h1{
+     color: aliceblue;
+    font-style: italic;
+    align-items:left;
+    top: 0;
+    left: 0;
+    display: flex;
+    font size :4em;
+}
+
+nav a {
+   margin: 15px;
+    color: aliceblue;  
+  align-items:center ;     
+
+}
+header {
+    background-color: rgb(4, 37, 48);
+    border-radius: 20px;
+
+}
+nav a:hover {
+    background-color: rgb(4, 94, 94);
+}
+
+ p{
+    color: aliceblue;
+    font-style: italic;
+    margin left : 20px;
+    text-align: left;
+    width: 50%;
+
+}
+h2 {
+font-size: 2em;
+letter-spacing: 1px;
+color: aliceblue;
+}
+a{
+    color: aliceblue;
+}
+a:hover{
+    background-color: aquamarine;
+}
+
+
