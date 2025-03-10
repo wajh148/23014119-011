@@ -2,6 +2,17 @@ body {
     background-color: rgb(5, 85, 85);
     scroll-behavior: smooth;
 }
+.menu-btn {
+    font-size: 50px;
+    cursor: pointer;
+    top: 15px;
+    left: 15px;
+    background-color: aliceblue;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
 
 h1{
     
