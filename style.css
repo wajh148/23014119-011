@@ -1,6 +1,9 @@
 body {
     background-color: rgb(5, 85, 85);
     scroll-behavior: smooth;
+    overflow-y:scroll;
+    height:50vh;
+    
 }
 .menu-btn {
     font-size: 50px;
