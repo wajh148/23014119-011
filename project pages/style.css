@@ -1,0 +1,243 @@
+
+body {
+    background-color: #050e2d;
+    scroll-behavior: smooth;
+    overflow-y: scroll; /* Scroll Bar کو Enable کرے گا */
+    height: 50vh; /* مکمل Page Cover کرے گا */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  
+}
+.menu-btn {
+    font-size: 30px;
+    cursor: pointer;
+    top: 15px;
+    left: 15px;
+    background-color:  #050e2d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+
+h1{
+    
+     color: aliceblue;
+    font-style: italic;
+    display: flex;
+    
+   
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+   margin: 15px;
+    color: aliceblue;  
+  align-items:center ;     
+ text-align: center;
+ padding-right: 2px;
+ text-decoration: none;
+ margin-right: 20px;
+
+}
+header {
+    background-color: #1b2141;
+    border-radius: 20px;
+    padding-right: 50px;
+    margin-right: 50px;
+   padding: 15px;
+  
+
+    
+}
+nav a:hover {
+    background-color: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeeef;
+    border-radius: 5px;
+}
+
+ p{
+    color: aliceblue;
+    font-style: italic;
+   
+    text-align: left;
+    width: 50%;
+
+}
+h2 {
+color: aliceblue;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+a:hover{
+    background-color:rgb(4, 94, 94);
+    text-decoration: none;
+}
+img{
+   
+    position: absolute; /* Scrolling ke sath move hogi */
+    right: 20px; /* Right side pe adjust */
+    top: 250px; /* Thodi neeche shift */
+    width: 350px; /* Size adjust karein */
+    height: auto;
+    border-radius: 20px; /* Edges curved */
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+    right : 100px;
+    bottom: 100px;
+}
+section{
+    padding: 100px 20px;
+
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+.weblogo{
+  
+        position: absolute;
+        top: 5px; /* اوپر سے تھوڑا نیچے */
+        right: 5px; /* دائیں طرف کارنر پر */
+        width: 80px; /* سائز چھوٹا */
+        height: 80px; /* ہائٹ بھی برابر تاکہ سرکل بنے */
+        border-radius: 50%; /* سرکل بنانے کے لیے */
+        object-fit: cover;
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background:#050e2d;
+    padding: 3px;
+    border-radius: 20px;
+    margin-left: 20px; /* Contact سے تھوڑا فاصلے پر رکھنے کے لیے */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.search-box {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 120px; /* Size چھوٹا کر دیا */
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px;
+}
+.GAME {
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+
+}
+.GAME ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.GAME ul li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius:5px ;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: aliceblue;
+}
+.GAME ul li{
+    background-color: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0 0 10px  #1aeeef;
+}
+.GAME .cardbx{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.GAME .cardbx .card{
+    border-radius: 10px;
+    width: 280px;
+    margin: 20px 40px;
+    background-color: #1b2141;
+    overflow: hidden;
+}
+.GAME .cardbx .card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+}
+.GAME .cardbx .card .content{
+    padding: 10px;
+
+}
+.GAME .cardbx .card .content h4{
+    color: aliceblue;
+    margin: 15px 0;
+
+}
+.GAME .cardbx .card .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #35407e;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0, 5,1) forwards;
+
+}
+.GAME .cardbx .card .progress-line span{
+    position: relative;
+    height:100%;
+    width: 80%;
+    border-radius: 10px;
+    background: #1aeeef;
+    box-shadow: 0  0 10px #1aeeef;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0, 5,1) forwards;
+}
+@keyframes animate{
+    100%{
+
+   
+    transform: scaleX(1);
+}
+}
+.GAME .cardbx .card .Info{
+   border-top: 2px solid #35407e;
+    padding: 5px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.GAME .cardbx .card .Info p{
+    font-size: 1em;
+    color: aliceblue;
+}
