@@ -7,9 +7,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="menu-btn" onclick="tooglemenu()">
-        ☰
-        <div>
+     
+     <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+     <div class="sidebar" id="sidebar">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">×</a>
+         <a href="#HOME">HOME</a>
+        
+         <a href="javascript:void(0)" onclick="toggleTournaments()">TOURNAMENTS</a>
+           <div id="tournamentOptions" class="tournaments">
+             <a href="#">PUBG</a>
+             <a href="#">Free Fire</a>
+             <a href="#">Arena Breakout</a>
+         </div>
+         <a href="#">LEADERBOARD</a>
+     </div>
    
             <img  src="weblogo.png" class="weblogo" alt="weblogo"> 
         </div>
