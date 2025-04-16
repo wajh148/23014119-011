@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans flex justify-center items-center min-h-screen bg-cover bg-center" style="background-image: url('background.png'); backdrop-filter: blur(10px);">
+
+    <div class="login-container bg-white/20 p-8 rounded-2xl backdrop-blur-lg text-left w-96 shadow-lg border border-white/30 relative">
+        <button class="close-btn absolute top-2 right-2 bg-black text-white rounded-full w-8 h-8 flex items-center justify-center text-xl" onclick="closeRegister()">×</button>
+        <h2 class="text-left text-black font-bold mb-5">Register</h2>
+        
+        <div class="input-group mb-4">
+            <label for="username" class="block text-black text-sm mb-1">Username</label>
+            <input type="text" id="username" placeholder="Enter your username" class="block w-full p-3 rounded-lg bg-white/30 text-black text-lg outline-none" required>
+        </div>
+
+        <div class="input-group mb-4">
+            <label for="email" class="block text-black text-sm mb-1">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" class="block w-full p-3 rounded-lg bg-white/30 text-black text-lg outline-none" required>
+        </div>
+
+        <div class="input-group mb-4">
+            <label for="password" class="block text-black text-sm mb-1">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" class="block w-full p-3 rounded-lg bg-white/30 text-black text-lg outline-none" required>
+        </div>
+
+        <div class="input-group mb-4">
+            <label for="confirm-password" class="block text-black text-sm mb-1">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Confirm your password" class="block w-full p-3 rounded-lg bg-white/30 text-black text-lg outline-none" required>
+        </div>
+
+        <div class="mb-4">
+            <input type="checkbox" id="terms" class="mr-2"> I agree to the terms & conditions
+        </div>
+
+        <button type="submit" class="w-full p-3 rounded-lg bg-gray-200 text-gray-900 text-lg cursor-pointer transition duration-300 ease-in-out hover:bg-gray-800 hover:text-white">
+            <a href="login.html">Register</a>
+        </button>
+
+        <p class="mt-4 text-sm">Already have an account? <a href="login.html" class="text-black hover:text-gray-600">Login here</a></p>
+    </div>
+
+</body>
+</html>
