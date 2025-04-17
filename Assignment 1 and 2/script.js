@@ -60,3 +60,21 @@ function toggleParagraphVisibility() {
         paragraph.style.display = "none";
     }
 }
+
+function adjustForMobile() {
+    if (window.innerWidth <= 768) { // Phone size
+        document.body.classList.add("bg-blue-200"); // Background color change for mobile
+        document.getElementById("sidebar").style.width = "0"; // Ensure sidebar is hidden on mobile
+    } else {
+        document.body.classList.remove("bg-blue-200");
+    }
+}
+
+function adjustForLaptop() {
+    if (window.innerWidth > 1024) { // Laptop size or larger
+        document.body.classList.add("bg-green-200"); // Background color change for laptop
+        document.getElementById("sidebar").style.width = "250px"; // Sidebar visible on laptop
+    } else {
+        document.body.classList.remove("bg-green-200");
+    }
+}
