@@ -7,33 +7,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <!-- Menu Button to Open Sidebar -->
-     <div class="menu-btn" onclick="toggleMenu()">☰</div>
+ <!-- Menu Button to Open Sidebar -->
+<div class="menu-btn md:hidden p-4 text-3xl cursor-pointer" onclick="toggleMenu()">☰</div>
 
-     <!-- Sidebar -->
-     <div class="sidebar" id="sidebar">
-         <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">×</a>
-         <a href="#HOME">HOME</a>
-         
-         <!-- Tournament Link that will toggle showing the options -->
-         <a href="javascript:void(0)" onclick="toggleTournaments()">TOURNAMENTS</a>
-           <!-- Tournament options (Initially hidden) -->
-           <div id="tournamentOptions" class="tournaments">
-             <a href="#">PUBG</a>
-             <a href="#">Free Fire</a>
-             <a href="#">Arena Breakout</a>
-         </div>
-         <a href="#">LEADERBOARD</a>
-     </div>
-      <div>
+<!-- Sidebar -->
+<div class="sidebar hidden fixed top-0 left-0 h-full w-64 bg-gray-800 text-white z-50 p-4 transition-all duration-300" id="sidebar">
+    <a href="javascript:void(0)" class="closebtn text-2xl float-right" onclick="closeMenu()">×</a>
+    
+    <!-- Updated Nav Links -->
+    <a href="#HOME" >HOME</a>
+    <a href="#ABOUT" >ABOUT US</a>
+    <a href="#GAMES" >GAMES</a>
+    <a href="#TOURNAMENTS">TOURNAMENTS</a>
+    <a href="#CONTACT">CONTACT US</a>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-between px-6 py-4">
             <img  src="weblogo.png" class="weblogo" alt="weblogo"> 
         </div>
     </div>
-       <div class="heading1"> <h1>GAMMERS</h1> </div>
-   
-        <div>
-            <img src="warrior.png"  class= "warrior" alt="warrior image">
-         </div>
+       <div  class="flex flex-col md:flex-row items-center justify-between px-6 py-4" > <h1 class="heading1">GAMMERS</h1> </div>
+       <div class="flex justify-center items-center w-full">
+        <img src="warrior.png" alt="Warrior" class="warrior w-[350px] md:w-[350px] sm:w-[90%] mx-auto md:absolute md:right-[100px] md:top-[350px] rounded-[20px] shadow-lg" />
+    </div>
     </div>
   
     <header>
@@ -113,13 +108,13 @@
       <h2>TOURNAMENTS</h2>
    <div class="tournametbox">
       <h3 style="color: aliceblue; padding: 20px;">LIVE TOURNAMENTS</h3>
-      <div>
-        <img src="mixture of games.png"  class="mixture"  alt="mixture of games">
-      
+      <div class="flex justify-center items-center w-full mt-4">
+        <img src="mixture of games.png" alt="Mixture" class="mixture w-[450px] md:w-[450px] sm:w-[90%] mx-auto md:absolute md:right-[20px] md:top-[0px] rounded-[20px] shadow-lg mt-[-65px]" />
+    </div>
      </div>
       <p style="padding: 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eos, tempora porro sequi impedit quisquam facere ea? Ad eligendi praesentium dignissimos, dolorem beatae facilis, corporis laudantium, minima rem molestias eius deleniti voluptatibus officia repellat alias labore magnam ratione et! Eius ipsum quam nam quis. Reprehenderit incidunt aliquam excepturi facere sint.</p>
  <div style="   display: inline-block; list-style: none;padding: 10px 20px;border-radius:5px ;margin-top: 20px; cursor: pointer;color: aliceblue;  background-color: #05a1a1; box-shadow: 0 0 10px  #029595;">
-   <a href="#" class="link2">JOIN NOW</a>
+   <a href="Tournament.html" class="link2">JOIN NOW</a>
     </div>
 </div>
     </section>
